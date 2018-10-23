@@ -8,8 +8,8 @@ import {
   Redirect
 } from 'react-router-dom'
 
-import Home from './containers/Home'
-import Auth from './containers/Auth'
+import Home from './containers/Home/Home'
+import Login from './containers/Login/Login'
 import PrivateRoute from './components/PrivateRoute'
 
 const Routes = (props) => {
@@ -28,7 +28,7 @@ const Routes = (props) => {
           component={() => {
             return props.auth.allowed
               ? <Redirect to="/home" />
-              : <Auth />
+              : <Login />
           }}
         />
       </Switch>
@@ -36,6 +36,4 @@ const Routes = (props) => {
   )
 }
 
-export default connect(
-    state => ({ auth: state.auth })
-  )(Routes)
+export default connect(state => ({ auth: state.auth }))(Routes)

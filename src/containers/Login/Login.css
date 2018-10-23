@@ -1,0 +1,23 @@
+.login-main {
+    background-image: url('https://abrilmdemulher.files.wordpress.com/2017/12/eron-creative-salon-full-version-83.jpg?quality=90&strip=info&strip=info');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.center-div {
+    background-color: white;
+    border-radius: 7px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    margin-top: 35vh;
+    left: 0;
+    width: 400px;
+    padding: 15px 15px 15px 15px;
+}
+
+p {
+    text-align: center
+}
